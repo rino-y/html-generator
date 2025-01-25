@@ -4,6 +4,7 @@ import { minify } from 'html-minifier';
 import Handlebars from 'handlebars';
 
 interface ProductVariation {
+    code: string;
     color: string;
     quantity?: string;
     contentFiles?: string[];
@@ -59,11 +60,11 @@ async function generateFiles() {
                                 additionalContent += content;
                             }
                         } catch (contentError) {
-                            console.error(`Failed to read content file for ${product.name}_${variation.color}:`, contentError);
+                            console.error(`Failed to read content file for ${product.name}_${variation.code}:`, contentError);
                         }
                     }
 
-                    const data = { name: product.name, color: variation.color, quantity: variation.quantity, additionalContent: additionalContent };
+                    const data = { name: product.name, code: variation.code, color: variation.color, quantity: variation.quantity, additionalContent: additionalContent };
 
                     const filenameTemplate = Handlebars.compile(product.filenameTemplate);
                     const filename = filenameTemplate(data);

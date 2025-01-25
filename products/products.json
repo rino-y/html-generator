@@ -1,12 +1,13 @@
 [
     {
         "name": "商品A",
-        "filenameTemplate": "{{name}}_{{color}}.html",
+        "filenameTemplate": "{{name}}/{{code}}_{{color}}.html",
         "template": "templateA",
         "header": "header1",
         "footer": "footer1",
         "variations": [
             {
+                "code": "a",
                 "color": "赤",
                 "contentFiles": [
                     "productA_red",
@@ -14,6 +15,7 @@
                 ]
             },
             {
+                "code": "b",
                 "color": "黄"
             }
         ]
