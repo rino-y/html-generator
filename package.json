@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "handlebars": "^4.7.8",
+    "html-minifier": "^4.0.0",
+    "typescript": "^5.7.3"
+  }
+}
