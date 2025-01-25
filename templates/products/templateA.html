@@ -1,0 +1,10 @@
+<main>
+    <h3>商品名：{{name}}（{{color}}から引用）の詳細</h3>
+    <p>これは商品A専用のテンプレートです。<br>色：（{{color}}から引用）</p>
+    {{#if additionalContent}}
+    <div class="additional-content">
+        {{{additionalContent}}}
+    </div>
+    {{/if}}
+    <img src="productA.jpg" alt="{{name}}">
+</main>

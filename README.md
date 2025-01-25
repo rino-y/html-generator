@@ -44,7 +44,7 @@ project/
 1.  **必要なパッケージのインストール:**
 
     ```bash
-    npm install typescript @types/node html-minifier handlebars --save-dev
+    npm install typescript @types/node html-minifier @types/html-minifier handlebars --save-dev
     ```
 
 2.  **JSONデータ (`products/products.json`) の作成:**
@@ -94,7 +94,7 @@ project/
 *   `footer`: 使用するフッターファイル名 (文字列)
 *   `variations`: 商品バリエーションの配列
     *   `color`: 色 (文字列)
-    *   `quorty`: 数量 (文字列、オプション)
+    *   `quantity`: 数量 (文字列、オプション)
     * `contentFiles`: 追加コンテンツファイル名の配列（文字列配列、オプション）
 
 ## テンプレートファイルの記述

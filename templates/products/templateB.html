@@ -1,0 +1,13 @@
+<main>
+    <h2>商品名：{{name}}（{{color}}から引用）の情報</h2>
+    <ul>
+        <li>これは商品B専用のリストです。色：（{{color}}から引用）</li>
+        <li>別の情報</li>
+    </ul>
+    {{#if additionalContent}}
+    <div class="additional-content">
+        {{{additionalContent}}}
+    </div>
+    {{/if}}
+    <p>追加情報：{{name}}について</p>
+</main>

@@ -1,0 +1,55 @@
+[
+    {
+        "name": "商品A",
+        "filenameTemplate": "{{name}}_{{color}}.html",
+        "template": "templateA",
+        "header": "header1",
+        "footer": "footer1",
+        "variations": [
+            {
+                "color": "赤",
+                "contentFiles": [
+                    "productA_red",
+                    "productB_mizu"
+                ]
+            },
+            {
+                "color": "黄"
+            }
+        ]
+    },
+    {
+        "name": "商品B",
+        "filenameTemplate": "{{name}}_{{color}}.html",
+        "template": "templateB",
+        "header": "header2",
+        "footer": "footer2",
+        "variations": [
+            {
+                "color": "青"
+            },
+            {
+                "color": "水",
+                "contentFile": ["productB_mizu"]
+            }
+        ]
+    },
+    {
+        "name": "商品C",
+        "filenameTemplate": "{{name}}_{{color}}_{{quantity}}.html",
+        "template": "templateC",
+        "header": "header1",
+        "footer": "footer1",
+        "variations": [
+            {
+                "color": "緑",
+                "quantity": "1"
+            },
+            {
+                "color": "赤",
+                "quantity": "2",
+                "contentFile": ["productC_aka"]
+            }
+        ]
+    }
+]
