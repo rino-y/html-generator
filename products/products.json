@@ -20,7 +20,7 @@
     },
     {
         "name": "商品B",
-        "filenameTemplate": "{{name}}_{{color}}.html",
+        "filenameTemplate": "{{name}}/{{color}}.html",
         "template": "templateB",
         "header": "header2",
         "footer": "footer2",
@@ -36,7 +36,7 @@
     },
     {
         "name": "商品C",
-        "filenameTemplate": "{{name}}_{{color}}_{{quantity}}.html",
+        "filenameTemplate": "{{name}}/{{color}}_{{quantity}}.html",
         "template": "templateC",
         "header": "header1",
         "footer": "footer1",

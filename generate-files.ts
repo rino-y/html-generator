@@ -68,6 +68,13 @@ async function generateFiles() {
                     const filenameTemplate = Handlebars.compile(product.filenameTemplate);
                     const filename = filenameTemplate(data);
                     const filepath = path.join(outputDir, filename);
+                    const dirname = path.dirname(filepath); // ファイルパスからディレクトリ部分を抽出
+                    try {
+                        await fs.mkdir(dirname, { recursive: true }); // ディレクトリを作成（存在しない場合は作成）
+                    } catch (mkdirError) {
+                        console.error(`Failed to create directory ${dirname}:`, mkdirError);
+                        continue; // ディレクトリ作成に失敗した場合はスキップ
+                    }
 
                     const header = headerTemplate(data);
                     const footer = footerTemplate(data);
