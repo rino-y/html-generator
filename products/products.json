@@ -32,7 +32,7 @@
             },
             {
                 "color": "水",
-                "contentFile": ["productB_mizu"]
+                "contentFiles": ["productB_mizu"]
             }
         ]
     },
@@ -50,7 +50,7 @@
             {
                 "color": "赤",
                 "quantity": "2",
-                "contentFile": ["productC_aka"]
+                "contentFiles": ["productC_aka"]
             }
         ]
     }
